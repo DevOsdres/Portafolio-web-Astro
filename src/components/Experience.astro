@@ -1,0 +1,37 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Desarollador Jr Unity",
+    company: "Generation - Bootcamp",
+    description:
+      "Desarrollador de Videojuegos Junior en Unity (En curso) Dominio de Unity y programación en C#. Enfoque práctico en desarrollo de juegos y mecánicas interactivas.",
+    //link: "",
+  },
+  {
+    date: "Junio 2023",
+    title: "Ingeniero de Sistemas",
+    company: "Universidad de Nariño",
+    description:
+      "Fundamentos sólidos en programación y estructuras computacionales. Base robusta para el desarrollo de software.",
+  },
+  {
+    date: "Enero 2023",
+    title: "Machine Learning and Data Science - Diplomado",
+    company: "Universidad Nacional de Colombia",
+    description:
+      "Dominio en análisis de datos, visualización, aprendizaje computacional y big data con Python. Habilidades avanzadas para proyectos de IA.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

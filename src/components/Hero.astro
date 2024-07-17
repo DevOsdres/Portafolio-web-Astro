@@ -1,0 +1,53 @@
+---
+const personalImageAlt = "Oscar Cardona"
+import Badge from "@/components/Badge.astro"
+import LinkedInIcon from "@/components/icons/LinkedIn.astro"
+import MailIcon from "@/components/icons/Mail.astro"
+import WhatsAppIcon from "./icons/WhatsApp.astro"
+import SocialPill from "@/components/SocialPill.astro"
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full shadow-lg size-16"
+      src="/logo.png"
+      alt={personalImageAlt}
+    />
+    <a
+      href="https://www.linkedin.com/in/oscar-cardona-moscote-gamedev/"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>Disponible para trabajar</Badge>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+    Hey, soy Oscar Cardona
+  </h1>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300 text-justify"
+  >
+    Desarrollador <strong>Unity</strong>, Ingeniero de <strong>Sistemas</strong> y Creador de Experiencias <strong
+      >Interactivas</strong
+    >. <br>Transformo ideas en juegos cautivadores, mi pasión por la tecnología y el diseño se fusiona en cada línea de código que escribo. 
+    ¿Listo para dar vida a tu próximo proyecto? Explora mi portafolio y descubre cómo puedo llevar tus conceptos al siguiente nivel.
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="mailto:devosdres@gmail.com">
+      <MailIcon class="size-4" />
+      Contáctame
+    </SocialPill>
+    <SocialPill href="https://www.linkedin.com/in/oscar-cardona-moscote-gamedev/">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+    <SocialPill href="https://wa.me/573235141920?text=Hola%20Oscar%2C%20vi%20tu%20Portafolio">
+      <WhatsAppIcon class="size-4" />
+      WhatsApp
+    </SocialPill>
+  </nav>
+</div>
